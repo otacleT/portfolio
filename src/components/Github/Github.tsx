@@ -7,7 +7,6 @@ export const Github = () => {
     "https://api.github.com/users/otacleT/repos?sort=created&direction=desc&per_page=3",
     fetcher
   );
-  console.log({ data, error });
   if (!error && !data) {
     return <div>ローディング中</div>;
   }
