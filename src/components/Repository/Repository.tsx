@@ -39,10 +39,12 @@ export const Repository: FC<RepositoryProps> = (props) => {
   }
 
   return (
-    <div key={key} className="mt-5 first-of-type:mt-3">
-      <h3 className="text-sm font-semibold">{name}</h3>
-      <p className="text-xs mt-2">{description ?? "No descroption"}</p>
-      <div className="w-full max-w-md h-2 outline outline-transparent rounded-full overflow-hidden flex mt-2">
+    <div key={key} className="mt-5 first-of-type:mt-3 sm:mt-7">
+      <h3 className="text-[15px] sm:text-[17px] font-semibold">{name}</h3>
+      <p className="text-sm sm:text-[15px] mt-2 sm:mt-3">
+        {description ?? "No descroption"}
+      </p>
+      <div className="w-full h-2 outline outline-transparent rounded-full overflow-hidden flex mt-2 sm:mt-4">
         {array.map((key) => (
           <span
             className={`h-full block ${
@@ -60,7 +62,7 @@ export const Repository: FC<RepositoryProps> = (props) => {
       </div>
       <ul className="flex flex-wrap items-center justify-start space-x-2 mt-2">
         {array.map((key) => (
-          <li className="text-xs flex items-center">
+          <li className="text-xs sm:text-sm flex items-center">
             <span
               className={`w-[10px] h-[10px] mr-1 rounded-full inline-block ${
                 key === "TypeScript" && "bg-[#3178C6]"
