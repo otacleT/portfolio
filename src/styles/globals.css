@@ -15,4 +15,7 @@
   .section-title {
     @apply text-xl font-semibold;
   }
+  .section-subTitle {
+    @apply font-semibold mt-5;
+  }
 }
