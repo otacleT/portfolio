@@ -49,6 +49,7 @@ export const Repository: FC<RepositoryProps> = (props) => {
       <div className="w-full h-2 outline outline-transparent rounded-full overflow-hidden flex mt-2 sm:mt-4">
         {array.map((key) => (
           <span
+            key={Math.round(Math.random() * 10000)}
             className={`h-full block ${
               key === "TypeScript" && "bg-[#3178C6]"
             } ${key === "Solidity" && "bg-[#AA6746]"} ${
@@ -64,7 +65,10 @@ export const Repository: FC<RepositoryProps> = (props) => {
       </div>
       <ul className="flex flex-wrap items-center justify-start space-x-2 mt-2">
         {array.map((key) => (
-          <li className="text-xs sm:text-sm flex items-center dark:text-[#F5FFFA]">
+          <li
+            key={Math.round(Math.random() * 10000)}
+            className="text-xs sm:text-sm flex items-center dark:text-[#F5FFFA]"
+          >
             <span
               className={`w-[10px] h-[10px] mr-1 rounded-full inline-block ${
                 key === "TypeScript" && "bg-[#3178C6]"

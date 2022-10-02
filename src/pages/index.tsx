@@ -24,14 +24,14 @@ const Home: NextPage = () => {
             Taisei Miyabe
           </h1>
           <p className="text-sm sm:text-base text-[#888888] dark:text-[#dadada] tracking-wide text-center sm:text-left sm:mt-1">
-            Master's Student
+            Master&apos;s Student
           </p>
           <ul className="w-32 sm:w-20 flex items-center justify-around sm:justify-between mx-auto sm:mx-0 mt-10 sm:mt-5">
             <li>
               <a
                 href="https://twitter.com/otacleT"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <Image src="/logo-twitter.png" width={25} height={25} />
               </a>
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
               <a
                 href="https://github.com/otacleT"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <Image src="/logo-github.png" width={25} height={25} />
               </a>
