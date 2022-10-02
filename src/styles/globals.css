@@ -13,9 +13,9 @@
     @apply mt-10;
   }
   .section-title {
-    @apply text-xl font-semibold;
+    @apply text-xl font-semibold sm:text-[22px];
   }
   .section-subTitle {
-    @apply font-semibold mt-5;
+    @apply font-semibold mt-5 sm:text-[17px];
   }
 }
