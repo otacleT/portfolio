@@ -18,7 +18,7 @@ export const Github = () => {
   }
   return (
     <section className="section-wrap">
-      <h2 className="section-title">GIthub</h2>
+      <h2 className="section-title">Github</h2>
       {data.map((data: any) => (
         <Repository
           key={data.id}
