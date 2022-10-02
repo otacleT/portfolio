@@ -27,7 +27,7 @@ export const Github = () => {
           languagesUrl={data.languages_url}
         />
       ))}
-      <button className="w-[200px] h-10 flex items-center justify-center text-white bg-black rounded-md mx-auto mt-7">
+      <button className="w-[200px] sm:w-[220px] h-10 sm:h-12 flex items-center justify-center text-sm sm:text-base text-white bg-black rounded-md mx-auto mt-10">
         View on Github
       </button>
     </section>
