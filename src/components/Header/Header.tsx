@@ -11,12 +11,16 @@ export const Header = () => {
       <ul className="w-40 hidden sm:flex justify-between items-center">
         <li>
           <Link href="/">
-            <a className="px-3 py-2">Home</a>
+            <a className="px-3 py-2 rounded-md hover:bg-[#E6F0EB] hover:underline hover:decoration-1">
+              Home
+            </a>
           </Link>
         </li>
         <li>
           <Link href="/works">
-            <a className="px-3 py-2">Works</a>
+            <a className="px-3 py-2 rounded-md hover:bg-[#E6F0EB] hover:underline hover:decoration-1">
+              Works
+            </a>
           </Link>
         </li>
       </ul>
