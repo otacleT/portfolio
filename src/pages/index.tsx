@@ -12,16 +12,18 @@ const Home: NextPage = () => {
       <Head>
         <title>Taisei Miyabe - Home</title>
       </Head>
-      <p className="text-md text-center tracking-wide sm:hidden">Hi, there👋</p>
+      <p className="dark:text-[#F5FFFA] text-md text-center tracking-wide sm:hidden">
+        Hi, there👋
+      </p>
       <div className="flex justify-center flex-wrap sm:justify-around sm:items-center">
-        <div className="w-32 h-32 rounded-full mx-auto sm:mx-0 overflow-hidden mt-24 sm:mt-0 sm:order-2">
+        <div className="w-32 h-32 rounded-full mx-auto sm:mx-0 overflow-hidden mt-24 sm:mt-0 sm:order-2 outline outline-[#E6F0EB] dark:outline-[#464646]">
           <Image src="/me.JPG" width={150} height={150} />
         </div>
         <div className="w-full sm:w-auto sm:order-1 sm:px-3">
-          <h1 className="text-[22px] sm:text-[34px] font-semibold tracking-wide text-center sm:text-left mt-2">
+          <h1 className="dark:text-[#F5FFFA] text-[22px] sm:text-[34px] font-semibold tracking-wide text-center sm:text-left mt-2">
             Taisei Miyabe
           </h1>
-          <p className="text-sm sm:text-base text-[#888888] tracking-wide text-center sm:text-left sm:mt-1">
+          <p className="text-sm sm:text-base text-[#888888] dark:text-[#dadada] tracking-wide text-center sm:text-left sm:mt-1">
             Master's Student
           </p>
           <ul className="w-32 sm:w-20 flex items-center justify-around sm:justify-between mx-auto sm:mx-0 mt-10 sm:mt-5">

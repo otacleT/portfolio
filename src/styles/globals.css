@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#F5FFFA] pt-5;
+    @apply bg-[#F5FFFA] pt-5 dark:bg-[#292929];
   }
 }
 
@@ -13,9 +13,9 @@
     @apply mt-10;
   }
   .section-title {
-    @apply text-xl font-semibold sm:text-[22px];
+    @apply text-xl font-semibold sm:text-[22px] dark:text-[#F5FFFA];
   }
   .section-subTitle {
-    @apply font-semibold mt-5 sm:text-[17px];
+    @apply font-semibold mt-5 sm:text-[17px] dark:text-[#F5FFFA];
   }
 }
