@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer base {
   body {
-    @apply bg-[#F5FFFA];
+    @apply bg-[#F5FFFA] pt-5;
+  }
+}
+
+@layer components {
+  .section-wrap {
+    @apply mt-10;
+  }
+  .section-title {
+    @apply text-xl font-semibold;
   }
 }
