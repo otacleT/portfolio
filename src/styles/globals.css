@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#F5FFFA] pt-5 dark:bg-[#292929];
+    @apply bg-[#F5FFFA] pt-16 dark:bg-[#292929];
   }
 }
 
