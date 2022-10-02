@@ -13,8 +13,21 @@ export const Repository: FC<RepositoryProps> = (props) => {
   const { key, name, description, languagesUrl } = props;
   const { data, error } = useSWR(languagesUrl, fetcher);
   const [total, setTotal] = useState(0);
-  const array = Object.keys(data);
+  const [array, setArray] = useState<string[]>([]);
 
+  useEffect(() => {
+    if (!error && data) {
+      const keys = Object.keys(data);
+      setArray(keys);
+    }
+  }, [data]);
+  useEffect(() => {
+    let cnt = 0;
+    for (const x of array) {
+      cnt += data[x];
+    }
+    setTotal(cnt);
+  }, [array]);
   if (!error && !data) {
     return <div>ローディング中</div>;
   }
@@ -24,19 +37,12 @@ export const Repository: FC<RepositoryProps> = (props) => {
   if (data.length === 0) {
     return <div>データは空です</div>;
   }
-  useEffect(() => {
-    let cnt = 0;
-    for (const x of array) {
-      cnt += data[x];
-    }
-    setTotal(cnt);
-  }, []);
 
   return (
     <div key={key} className="mt-5 first-of-type:mt-3">
       <h3 className="text-sm font-semibold">{name}</h3>
       <p className="text-xs mt-2">{description ?? "No descroption"}</p>
-      <div className="w-full max-w-xs h-2 outline outline-transparent rounded-full overflow-hidden flex mt-2">
+      <div className="w-full max-w-md h-2 outline outline-transparent rounded-full overflow-hidden flex mt-2">
         {array.map((key) => (
           <span
             className={`h-full block ${
