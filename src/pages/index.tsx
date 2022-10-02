@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Bio } from "src/components/Bio";
 import { Github } from "src/components/Github";
 import { Skills } from "src/components/Skills";
+import { Twitter } from "src/components/Twitter";
 
 const Home: NextPage = () => {
   return (
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
       <Bio />
       <Skills />
       <Github />
+      <Twitter />
     </div>
   );
 };
