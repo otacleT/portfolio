@@ -1,10 +1,33 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
+import { Bio } from "src/components/Bio";
+import { Repository } from "src/components/Repository";
+import { Skills } from "src/components/Skills";
+import { fetcher } from "src/lib/fetcher";
+import useSWR from "swr";
 
 const Home: NextPage = () => {
-  //https://api.github.com/users/otacleT/repos?sort="created"&direction="desc"&per_page=3
-  https: return (
+  const { data, error } = useSWR(
+    "https://api.github.com/users/otacleT/repos?sort=created&direction=desc&per_page=3",
+    fetcher
+  );
+  console.log({ data, error });
+  if (!error && !data) {
+    return <div>ローディング中</div>;
+  }
+  if (error) {
+    return <div>{error.message}</div>;
+  }
+  if (data.length === 0) {
+    return <div>データは空です</div>;
+  }
+
+  return (
     <div className="max-w-xl mx-auto px-4 pt-3">
+      <Head>
+        <title>Taisei Miyabe - Home</title>
+      </Head>
       <p className="text-md text-center tracking-wide">Hi, there👋</p>
       <div className="w-32 h-32 rounded-full mx-auto overflow-hidden mt-24">
         <Image src="/me.JPG" width={150} height={150} />
@@ -24,78 +47,22 @@ const Home: NextPage = () => {
             <Image src="/logo-github.png" width={25} height={25} />
           </a>
         </li>
-        {/* <li>
-          <a
-            className="block w-5 h-5 overflow-hidden"
-            href="https://www.wantedly.com/id/otacleT"
-            target="_blank"
-            rel="noopener"
-          >
-            <Image
-              src="/logo-wantedly.png"
-              className="maxWnone"
-              width={30}
-              height={30}
-            />
-          </a>
-        </li> */}
       </ul>
-      <section className="section-wrap mt-28">
-        <h2 className="section-title">Bio</h2>
-        <ul className="flex flex-wrap space-y-1 [&>li]:text-sm mt-3">
-          <li>
-            <span className="font-semibold pr-3">2022.3</span>
-            九州工業大学情報工学部　卒業
-          </li>
-          <li>
-            <span className="font-semibold pr-3">2022.4</span>
-            九州工業大学情報工学府　入学
-          </li>
-        </ul>
-      </section>
+      <Bio />
+      <Skills />
       <section className="section-wrap">
-        <h2 className="section-title">Skills</h2>
-        <ul className="flex items-center space-x-1 space-y-1 mt-3 flex-wrap [&>li]:w-8 [&>li]:h-8">
-          <li>
-            <Image src="/skill-html5.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-css3.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-sass.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-php.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-js.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-ts.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-react.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-nextjs.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-tailwindcss.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-mantine.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-solidity.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-ethers.svg" width={32} height={32} />
-          </li>
-          <li>
-            <Image src="/skill-hardhat.svg" width={32} height={32} />
-          </li>
-        </ul>
+        <h2 className="section-title">GIthub</h2>
+        {data.map((data: any) => (
+          <Repository
+            key={data.id}
+            name={data.name}
+            description={data.description ?? "No descroption"}
+            languagesUrl={data.languages_url}
+          />
+        ))}
+        <button className="w-[200px] h-10 flex items-center justify-center text-white bg-black rounded-md mx-auto mt-7">
+          View on Github
+        </button>
       </section>
     </div>
   );
