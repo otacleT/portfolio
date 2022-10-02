@@ -8,6 +8,18 @@ export const Header = () => {
   const [opened, setOpened] = useState<boolean>(false);
   return (
     <div className="max-w-2xl mx-auto px-4 flex items-center justify-between">
+      <ul className="w-40 hidden sm:flex justify-between items-center">
+        <li>
+          <Link href="/">
+            <a className="px-3 py-2">Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/works">
+            <a className="px-3 py-2">Works</a>
+          </Link>
+        </li>
+      </ul>
       <Menu
         width={220}
         radius="md"
@@ -18,7 +30,7 @@ export const Header = () => {
       >
         <Menu.Target>
           <button
-            className={`h-10 w-10 flex items-center justify-center rounded-md hover:bg-[#E6F0EB] ${
+            className={`h-10 w-10 flex sm:hidden items-center justify-center rounded-md hover:bg-[#E6F0EB] ${
               opened && "border border-[#DCE6E1] bg-[#E6F0EB]"
             }`}
           >
@@ -26,7 +38,7 @@ export const Header = () => {
           </button>
         </Menu.Target>
 
-        <Menu.Dropdown>
+        <Menu.Dropdown className="sm:hidden">
           <Menu.Item
             className="hover:decoration-1 hover:underline"
             component="a"
