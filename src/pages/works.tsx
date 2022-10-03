@@ -8,7 +8,7 @@ const Works: NextPage = () => {
       <h2 className="section-title">Works</h2>
       <h3 className="section-subTitle">- Decentralized app</h3>
       <div className="flex flex-wrap justify-between items-start">
-        <Link href="/">
+        <Link href="/works/gourmet-app">
           <a className="w-full sm:w-[calc(50%-5px)] block mt-3">
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
@@ -30,7 +30,7 @@ const Works: NextPage = () => {
       </div>
       <h3 className="section-subTitle mt-8">- Web app</h3>
       <div className="flex flex-wrap justify-between items-start space-y-6 sm:space-y-0 mt-3">
-        <Link href="/">
+        <Link href="/works/colorful-todo">
           <a className="w-full sm:w-[calc(50%-5px)] block">
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
@@ -49,7 +49,7 @@ const Works: NextPage = () => {
             </p>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/works/no-spoilers-twitter">
           <a className="w-full sm:w-[calc(50%-5px)] block">
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
@@ -71,7 +71,7 @@ const Works: NextPage = () => {
       </div>
       <h3 className="section-subTitle mt-8">- Web page</h3>
       <div className="flex flex-wrap justify-between items-start space-y-6 sm:space-y-0 mt-3">
-        <Link href="/">
+        <Link href="/works/kyuko">
           <a className="w-full sm:w-[calc(50%-5px)] block">
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
@@ -90,7 +90,7 @@ const Works: NextPage = () => {
             </p>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/works/fukupoke">
           <a className="w-full sm:w-[calc(50%-5px)] block">
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
