@@ -48,14 +48,14 @@ export const Header = () => {
 
           <Menu.Dropdown className="sm:hidden dark:bg-[#151515] dark:border-[#464646]">
             <Menu.Item
-              className="text-sm block h-11 p-3 hover:decoration-1 hover:underline dark:text-[#F5FFFA] dark:hover:bg-[#3d3d3d]"
+              className="text-sm flex items-center h-11 rounded-[4px] p-3 hover:decoration-1 hover:underline dark:text-[#F5FFFA] dark:hover:bg-[#3d3d3d]"
               component="a"
               href="/"
             >
               Home
             </Menu.Item>
             <Menu.Item
-              className="text-sm block h-11 p-3 hover:decoration-1 hover:underline dark:text-[#F5FFFA] dark:hover:bg-[#3d3d3d]"
+              className="text-sm flex items-center h-11 rounded-[4px] p-3 hover:decoration-1 hover:underline dark:text-[#F5FFFA] dark:hover:bg-[#3d3d3d]"
               component="a"
               href="/works"
             >
