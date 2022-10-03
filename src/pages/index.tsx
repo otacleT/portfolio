@@ -33,7 +33,12 @@ const Home: NextPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image src="/logo-twitter.png" width={25} height={25} />
+                <Image
+                  className="dark:invert-[50%] dark:sepia-[0%] dark:saturate-[11%] dark:hue-rotate-[143deg] dark:brightness-[101%] dark:contrast-[93%]"
+                  src="/logo-twitter.png"
+                  width={25}
+                  height={25}
+                />
               </a>
             </li>
             <li>
@@ -42,7 +47,12 @@ const Home: NextPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image src="/logo-github.png" width={25} height={25} />
+                <Image
+                  className="dark:invert-[50%] dark:sepia-[0%] dark:saturate-[11%] dark:hue-rotate-[143deg] dark:brightness-[101%] dark:contrast-[93%]"
+                  src="/logo-github.png"
+                  width={25}
+                  height={25}
+                />
               </a>
             </li>
           </ul>
