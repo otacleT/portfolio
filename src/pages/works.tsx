@@ -13,6 +13,7 @@ const Works: NextPage = () => {
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
+                alt="信頼度に応じた飲食店評価アプリの画像"
                 src="/gourmet-top.png"
                 width={600}
                 height={360}
@@ -34,6 +35,7 @@ const Works: NextPage = () => {
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
+                alt="Colorful Todoアプリの画像"
                 src="/todo-top.png"
                 width={600}
                 height={360}
@@ -52,6 +54,7 @@ const Works: NextPage = () => {
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
+                alt="No Spoilers Twitterの画像"
                 src="/twitter-top.png"
                 width={600}
                 height={360}
@@ -73,6 +76,7 @@ const Works: NextPage = () => {
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
+                alt="九州工科自動車専門学校のHPの画像"
                 src="/kyuko-top.JPG"
                 width={600}
                 height={360}
@@ -91,6 +95,7 @@ const Works: NextPage = () => {
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
+                alt="ふくポケのHPの画像"
                 src="/fukupoke-top.JPG"
                 width={600}
                 height={360}
