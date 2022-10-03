@@ -19,14 +19,14 @@ export const Repository: FC<RepositoryProps> = (props) => {
       const keys = Object.keys(data);
       setArray(keys);
     }
-  }, [data]);
+  }, [data, error]);
   useEffect(() => {
     let cnt = 0;
     for (const x of array) {
       cnt += data[x];
     }
     setTotal(cnt);
-  }, [array]);
+  }, [array, data]);
   if (!error && !data) {
     return <div>ローディング中</div>;
   }
