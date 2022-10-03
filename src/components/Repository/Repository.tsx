@@ -1,6 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { fetcher } from "src/lib/fetcher";
-import useSWR from "swr";
+import useSWRImmutable from "swr/immutable";
 
 type RepositoryProps = {
   key: number;
@@ -11,7 +10,7 @@ type RepositoryProps = {
 
 export const Repository: FC<RepositoryProps> = (props) => {
   const { key, name, description, languagesUrl } = props;
-  const { data, error } = useSWR(languagesUrl, fetcher);
+  const { data, error } = useSWRImmutable(languagesUrl);
   const [total, setTotal] = useState(0);
   const [array, setArray] = useState<string[]>([]);
 
