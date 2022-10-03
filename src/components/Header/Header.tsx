@@ -63,39 +63,29 @@ export const Header = () => {
 
           <Menu.Dropdown className="sm:hidden dark:bg-[#151515] dark:border-[#464646]">
             <Menu.Item
-              className="hover:decoration-1 hover:underline dark:text-[#F5FFFA] dark:hover:bg-[#3d3d3d]"
+              className="block p-3 hover:decoration-1 hover:underline dark:text-[#F5FFFA] dark:hover:bg-[#3d3d3d]"
               component="a"
               href="/"
             >
               Home
             </Menu.Item>
             <Menu.Item
-              className="hover:decoration-1 hover:underline dark:text-[#F5FFFA] dark:hover:bg-[#3d3d3d]"
+              className="block p-3 hover:decoration-1 hover:underline dark:text-[#F5FFFA] dark:hover:bg-[#3d3d3d]"
               component="a"
               href="/works"
             >
               Works
             </Menu.Item>
-            <p className="block px-3 py-2 text-sm text-[#888888]">
-              coming soon
-            </p>
+            <p className="block p-3 text-sm text-[#888888]">coming soon</p>
           </Menu.Dropdown>
         </Menu>
-        {dark ? (
-          <button
-            className="h-10 w-10 rounded-md bg-[#805AD5] flex items-center justify-center"
-            onClick={handleDarkMode}
-          >
-            <MoonIcon className="h-5 w-5 text-[#F5FFFA]" />
-          </button>
-        ) : (
-          <button
-            className="h-10 w-10 rounded-md bg-[#FBD38D] flex items-center justify-center"
-            onClick={handleDarkMode}
-          >
-            <SunIcon className="h-5 w-5 text-black" />
-          </button>
-        )}
+        <button
+          className="h-10 w-10 rounded-md bg-[#805AD5] dark:bg-[#FBD38D] flex items-center justify-center"
+          onClick={handleDarkMode}
+        >
+          <MoonIcon className="h-5 w-5 text-[#F5FFFA] dark:hidden" />
+          <SunIcon className="h-5 w-5 text-black hidden dark:block" />
+        </button>
       </div>
     </div>
   );
