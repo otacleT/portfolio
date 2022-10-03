@@ -1,11 +1,10 @@
-import { fetcher } from "src/lib/fetcher";
-import useSWR from "swr";
+import { FC } from "react";
+import useSWRImmutable from "swr/immutable";
 import { Repository } from "../Repository";
 
-export const Github = () => {
-  const { data, error } = useSWR(
-    "https://api.github.com/users/otacleT/repos?sort=created&direction=desc&per_page=3",
-    fetcher
+export const Github: FC = () => {
+  const { data, error } = useSWRImmutable(
+    "https://api.github.com/users/otacleT/repos?sort=created&direction=desc&per_page=3"
   );
   if (!error && !data) {
     return <div>ローディング中</div>;
