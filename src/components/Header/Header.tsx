@@ -1,28 +1,13 @@
-import { MoonIcon } from "@heroicons/react/24/solid";
 import { Bars3CenterLeftIcon, SunIcon } from "@heroicons/react/24/outline";
+import { MoonIcon } from "@heroicons/react/24/solid";
 import { Menu } from "@mantine/core";
-import { useCallback, useState } from "react";
+import { useTheme } from "next-themes";
 import Link from "next/link";
+import { useState } from "react";
 
 export const Header = () => {
   const [opened, setOpened] = useState<boolean>(false);
-  const [dark, setDark] = useState<boolean>(false);
-  const toggleDarkMode = useCallback(() => {
-    // htmlタグにdarkクラスが含まれているかどうか
-    if (document.documentElement.classList.contains("dark")) {
-      // darkクラスが含まれているならライトモードに変更
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    } else {
-      // darkクラスが含まれていないならダークモードに変更
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    }
-  }, []);
-  const handleDarkMode = useCallback(() => {
-    setDark(!dark);
-    toggleDarkMode();
-  }, []);
+  const { theme, setTheme } = useTheme();
   return (
     <div className="w-full h-16 py-3 fixed top-0 left-0 backdrop-blur-sm z-50">
       <div className="max-w-2xl mx-auto px-4 flex items-center justify-between">
@@ -81,7 +66,7 @@ export const Header = () => {
         </Menu>
         <button
           className="h-10 w-10 rounded-md bg-[#805AD5] dark:bg-[#FBD38D] flex items-center justify-center"
-          onClick={handleDarkMode}
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
           <MoonIcon className="h-5 w-5 text-[#F5FFFA] dark:hidden" />
           <SunIcon className="h-5 w-5 text-black hidden dark:block" />
