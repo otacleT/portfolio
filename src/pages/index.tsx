@@ -1,12 +1,29 @@
-import type { NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { Bio } from "src/components/Bio";
 import { Github } from "src/components/Github";
 import { Skills } from "src/components/Skills";
 import { Twitter } from "src/components/Twitter";
+import { SWRConfig } from "swr";
 
-const Home: NextPage = () => {
+export const getServerSideProps: GetServerSideProps = async () => {
+  const GITHUB_URL =
+    "https://api.github.com/users/otacleT/repos?sort=created&direction=desc&per_page=3";
+  const repository = await fetch(GITHUB_URL);
+  const repositoryData = await repository.json();
+
+  return {
+    props: {
+      fallback: {
+        [GITHUB_URL]: repositoryData,
+      },
+    },
+  };
+};
+
+const Home: NextPage = (props) => {
+  const { fallback }: any = props;
   return (
     <div className="max-w-xl mx-auto px-4 pt-3 sm:pt-10">
       <Head>
@@ -62,7 +79,9 @@ const Home: NextPage = () => {
       </div>
       <Bio />
       <Skills />
-      <Github />
+      <SWRConfig value={{ fallback }}>
+        <Github />
+      </SWRConfig>
       <Twitter />
     </div>
   );
