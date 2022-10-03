@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         Hi, there👋
       </p>
       <div className="flex justify-center flex-wrap sm:justify-around sm:items-center">
-        <div className="w-32 h-32 rounded-full mx-auto sm:mx-0 overflow-hidden mt-24 sm:mt-0 sm:order-2 outline outline-[#E6F0EB] dark:outline-[#464646]">
+        <div className="w-32 h-32 rounded-full mx-auto sm:mx-0 overflow-hidden mt-24 sm:mt-0 sm:order-2 shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
           <Image src="/me.JPG" width={150} height={150} />
         </div>
         <div className="w-full sm:w-auto sm:order-1 sm:px-3">

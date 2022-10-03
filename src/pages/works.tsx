@@ -10,7 +10,7 @@ const Works: NextPage = () => {
       <div className="flex flex-wrap justify-between items-start">
         <Link href="/">
           <a className="w-full sm:w-[calc(50%-5px)] block mt-3">
-            <div className="w-full aspect-video rounded-md overflow-hidden relative outline outline-1 outline-[#E6F0EB] dark:outline-[#464646]">
+            <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
                 src="/gourmet-top.png"
@@ -31,7 +31,7 @@ const Works: NextPage = () => {
       <div className="flex flex-wrap justify-between items-start space-y-6 sm:space-y-0 mt-3">
         <Link href="/">
           <a className="w-full sm:w-[calc(50%-5px)] block">
-            <div className="w-full aspect-video rounded-md overflow-hidden relative outline outline-1 outline-[#E6F0EB] dark:outline-[#464646]">
+            <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
                 src="/todo-top.png"
@@ -49,7 +49,7 @@ const Works: NextPage = () => {
         </Link>
         <Link href="/">
           <a className="w-full sm:w-[calc(50%-5px)] block">
-            <div className="w-full aspect-video rounded-md overflow-hidden relative outline outline-1 outline-[#E6F0EB] dark:outline-[#464646]">
+            <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
                 src="/twitter-top.png"
@@ -70,7 +70,7 @@ const Works: NextPage = () => {
       <div className="flex flex-wrap justify-between items-start space-y-6 sm:space-y-0 mt-3">
         <Link href="/">
           <a className="w-full sm:w-[calc(50%-5px)] block">
-            <div className="w-full aspect-video rounded-md overflow-hidden relative outline outline-1 outline-[#E6F0EB] dark:outline-[#464646]">
+            <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
                 src="/kyuko-top.JPG"
@@ -88,7 +88,7 @@ const Works: NextPage = () => {
         </Link>
         <Link href="/">
           <a className="w-full sm:w-[calc(50%-5px)] block">
-            <div className="w-full aspect-video rounded-md overflow-hidden relative outline outline-1 outline-[#E6F0EB] dark:outline-[#464646]">
+            <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
                 src="/fukupoke-top.JPG"
