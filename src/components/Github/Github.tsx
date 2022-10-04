@@ -21,7 +21,7 @@ export const Github: FC = () => {
       <h2 className="section-title">Github</h2>
       {data.map((data: any) => (
         <Repository
-          key={data.id}
+          myKey={data.id}
           name={data.name}
           url={data.html_url}
           description={data.description ?? "No descroption"}

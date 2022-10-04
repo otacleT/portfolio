@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import useSWRImmutable from "swr/immutable";
 
 type RepositoryProps = {
-  key: number;
+  myKey: number;
   name: string;
   url: string;
   description: string;
@@ -10,7 +10,7 @@ type RepositoryProps = {
 };
 
 export const Repository: FC<RepositoryProps> = (props) => {
-  const { key, name, url, description, languagesUrl } = props;
+  const { myKey, name, url, description, languagesUrl } = props;
   const { data, error } = useSWRImmutable(languagesUrl);
   const [total, setTotal] = useState(0);
   const [array, setArray] = useState<string[]>([]);
@@ -43,7 +43,7 @@ export const Repository: FC<RepositoryProps> = (props) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      key={key}
+      key={myKey}
       className="block mt-5 first-of-type:mt-3 sm:mt-7"
     >
       <h3 className="dark:text-[#F5FFFA] text-[15px] sm:text-[17px] font-semibold">
@@ -55,7 +55,7 @@ export const Repository: FC<RepositoryProps> = (props) => {
       <div className="w-full h-2 outline outline-transparent rounded-full overflow-hidden flex mt-2 sm:mt-4">
         {array.map((key) => (
           <span
-            key={Math.round(Math.random() * 10000)}
+            key={Math.round(Math.random() * 10000000000)}
             className={`h-full block ${
               key === "TypeScript" && "bg-[#3178C6]"
             } ${key === "Solidity" && "bg-[#AA6746]"} ${
@@ -72,7 +72,7 @@ export const Repository: FC<RepositoryProps> = (props) => {
       <ul className="flex flex-wrap items-center justify-start space-x-2 mt-2">
         {array.map((key) => (
           <li
-            key={Math.round(Math.random() * 10000)}
+            key={Math.round(Math.random() * 10000000000)}
             className="text-xs sm:text-sm flex items-center dark:text-[#F5FFFA]"
           >
             <span
