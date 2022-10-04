@@ -1,10 +1,14 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 const Work: NextPage = () => {
   return (
     <div className="max-w-xl mx-auto px-4 pt-5">
+      <Head>
+        <title>Taisei Miyabe - 九州工科自動車専門学校のHP</title>
+      </Head>
       <Link href="/works">
         <a className="text-sm pr-1 dark:text-[#F5FFFA]">Works /</a>
       </Link>

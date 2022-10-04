@@ -1,10 +1,14 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 const Works: NextPage = () => {
   return (
     <div className="max-w-xl mx-auto px-4 pt-5">
+      <Head>
+        <title>Taisei Miyabe - Works</title>
+      </Head>
       <h2 className="section-title">Works</h2>
       <h3 className="section-subTitle">- Decentralized app</h3>
       <div className="flex flex-wrap justify-between items-start">
