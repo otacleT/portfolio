@@ -15,6 +15,7 @@ export const Github: FC = () => {
   if (data.length === 0) {
     return <div>データは空です</div>;
   }
+
   return (
     <section className="section-wrap">
       <h2 className="section-title">Github</h2>
@@ -22,13 +23,19 @@ export const Github: FC = () => {
         <Repository
           key={data.id}
           name={data.name}
+          url={data.html_url}
           description={data.description ?? "No descroption"}
           languagesUrl={data.languages_url}
         />
       ))}
-      <button className="w-[200px] sm:w-[220px] h-10 sm:h-12 flex items-center justify-center text-sm sm:text-base text-white bg-black rounded-md mx-auto mt-10">
+      <a
+        href="https://github.com/otacleT"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-[200px] sm:w-[220px] h-10 sm:h-12 flex items-center justify-center text-sm sm:text-base text-white bg-black rounded-md mx-auto mt-10"
+      >
         View on Github
-      </button>
+      </a>
     </section>
   );
 };
