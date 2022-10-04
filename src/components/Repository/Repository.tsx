@@ -4,12 +4,13 @@ import useSWRImmutable from "swr/immutable";
 type RepositoryProps = {
   key: number;
   name: string;
+  url: string;
   description: string;
   languagesUrl: string;
 };
 
 export const Repository: FC<RepositoryProps> = (props) => {
-  const { key, name, description, languagesUrl } = props;
+  const { key, name, url, description, languagesUrl } = props;
   const { data, error } = useSWRImmutable(languagesUrl);
   const [total, setTotal] = useState(0);
   const [array, setArray] = useState<string[]>([]);
@@ -38,7 +39,13 @@ export const Repository: FC<RepositoryProps> = (props) => {
   }
 
   return (
-    <div key={key} className="mt-5 first-of-type:mt-3 sm:mt-7">
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      key={key}
+      className="block mt-5 first-of-type:mt-3 sm:mt-7"
+    >
       <h3 className="dark:text-[#F5FFFA] text-[15px] sm:text-[17px] font-semibold">
         {name}
       </h3>
@@ -84,6 +91,6 @@ export const Repository: FC<RepositoryProps> = (props) => {
           </li>
         ))}
       </ul>
-    </div>
+    </a>
   );
 };
