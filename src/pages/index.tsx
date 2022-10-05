@@ -9,7 +9,7 @@ import { SWRConfig } from "swr";
 
 export const getStaticProps: GetStaticProps = async () => {
   const GITHUB_URL =
-    "https://api.github.com/users/otacleT/repos?sort=created&direction=desc&per_page=3";
+    "https://api.github.com/users/otacleT/repos?sort=updated&direction=desc&per_page=3";
   const repository = await fetch(GITHUB_URL);
   const repositoryData = await repository.json();
 

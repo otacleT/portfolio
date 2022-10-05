@@ -4,7 +4,7 @@ import { Repository } from "../Repository";
 
 export const Github: FC = () => {
   const { data, error } = useSWRImmutable(
-    "https://api.github.com/users/otacleT/repos?sort=created&direction=desc&per_page=3"
+    "https://api.github.com/users/otacleT/repos?sort=updated&direction=desc&per_page=3"
   );
   if (!error && !data) {
     return <div>ローディング中</div>;
