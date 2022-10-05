@@ -29,7 +29,7 @@ export const Repository: FC<RepositoryProps> = (props) => {
     setTotal(cnt);
   }, [array, data]);
   if (!error && !data) {
-    return <div>ローディング中</div>;
+    return <div>loading...</div>;
   }
   if (error) {
     return <div>{error.message}</div>;
