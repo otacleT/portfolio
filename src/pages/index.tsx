@@ -31,7 +31,7 @@ const Home: NextPage = (props) => {
         <title>Taisei Miyabe - Home</title>
       </Head>
       <p className="dark:text-[#F5FFFA] text-md text-center tracking-wide sm:hidden">
-        Hi, there👋
+        Hi there👋
       </p>
       <div className="flex justify-center flex-wrap sm:justify-around sm:items-center">
         <div className="w-32 h-32 rounded-full mx-auto sm:mx-0 overflow-hidden mt-24 sm:mt-0 sm:order-2 shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
