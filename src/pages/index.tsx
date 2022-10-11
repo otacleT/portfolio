@@ -19,7 +19,7 @@ export const getStaticProps: GetStaticProps = async () => {
         [GITHUB_URL]: repositoryData,
       },
     },
-    revalidate: 86400,
+    revalidate: 3600,
   };
 };
 
