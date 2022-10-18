@@ -40,6 +40,17 @@ const Work: NextPage = () => {
       >
         https://github.com/otacleT/todo-app
       </a>
+      <h3 className="text-xs sm:text-sm font-bold mt-3 dark:text-[#F5FFFA]">
+        Hackathon page
+      </h3>
+      <a
+        className="text-sm sm:text-[15px] block pt-2 pb-3 border-b-2 border-black dark:border-[#F5FFFA] dark:text-[#F5FFFA]"
+        href="https://topaz.dev/projects/c24780e6ee0f85f5a712"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://topaz.dev/projects/c24780e6ee0f85f5a712
+      </a>
       <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)] mt-7">
         <Image
           className="object-cover"
