@@ -15,7 +15,7 @@ const Work: NextPage = () => {
       <h2 className="section-title mt-1 dark:text-[#F5FFFA]">
         信頼度に応じた飲食店評価アプリ
       </h2>
-      <p className="text-sm sm:text-[15px] leading-6 mt-5 indent-[1em] dark:text-[#F5FFFA] block rounded-md bg-[#E6F0EB] dark:bg-[#464646] px-3 py-4">
+      <p className="text-sm sm:text-[15px] leading-6 mt-5 dark:text-[#F5FFFA] block rounded-md bg-[#E6F0EB] dark:bg-[#464646] px-3 py-4">
         食べログの訴訟問題で明らかになった既存のグルメサービスの問題を解決するために、ブロックチェーン技術を用いてグルメサービスを実装しました。
         <br />
         技育展2022で登壇し、<strong>優秀賞</strong>をいただくことができました。

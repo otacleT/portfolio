@@ -15,7 +15,7 @@ const Work: NextPage = () => {
       <h2 className="section-title mt-1 dark:text-[#F5FFFA]">
         No Spoilers Twitter!!!
       </h2>
-      <p className="text-sm sm:text-[15px] leading-6 mt-5 indent-[1em] dark:text-[#F5FFFA] block rounded-md bg-[#E6F0EB] dark:bg-[#464646] px-3 py-4">
+      <p className="text-sm sm:text-[15px] leading-6 mt-5 dark:text-[#F5FFFA] block rounded-md bg-[#E6F0EB] dark:bg-[#464646] px-3 py-4">
         Twitterでのネタバレを防ぐためミュートしたい単語グループをワンクリックでオン/オフできるアプリ
       </p>
       <h3 className="text-xs sm:text-sm font-bold mt-5 dark:text-[#F5FFFA]">
