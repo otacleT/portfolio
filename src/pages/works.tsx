@@ -100,7 +100,7 @@ const Works: NextPage = () => {
               <Image
                 className="object-cover"
                 alt="九州工科自動車専門学校のHPの画像"
-                src="/kyuko-top.JPG"
+                src="/kyuko-top.jpg"
                 width={600}
                 height={360}
               />
@@ -119,7 +119,7 @@ const Works: NextPage = () => {
               <Image
                 className="object-cover"
                 alt="ふくポケのHPの画像"
-                src="/fukupoke-top.JPG"
+                src="/fukupoke-top.jpg"
                 width={600}
                 height={360}
               />

@@ -33,7 +33,7 @@ const Work: NextPage = () => {
         <Image
           className="object-cover"
           alt="九州工科自動車専門学校のHPの画像"
-          src="/kyuko-top.JPG"
+          src="/kyuko-top.jpg"
           width={600}
           height={360}
         />
