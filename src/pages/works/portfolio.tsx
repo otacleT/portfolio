@@ -35,7 +35,7 @@ const Work: NextPage = () => {
         <Image
           className="object-cover"
           alt="ポートフォリオサイトの画像"
-          src="/portfolio-top.JPG"
+          src="/portfolio-top.jpg"
           width={600}
           height={360}
         />
@@ -44,7 +44,7 @@ const Work: NextPage = () => {
         <Image
           className="object-cover"
           alt="ポートフォリオサイトの画像"
-          src="/portfolio-work.JPG"
+          src="/portfolio-work.jpg"
           width={600}
           height={360}
         />
@@ -53,7 +53,7 @@ const Work: NextPage = () => {
         <Image
           className="object-cover"
           alt="ポートフォリオサイトの画像"
-          src="/portfolio-single.JPG"
+          src="/portfolio-single.jpg"
           width={600}
           height={360}
         />

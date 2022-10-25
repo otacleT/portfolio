@@ -78,7 +78,7 @@ const Works: NextPage = () => {
               <Image
                 className="object-cover"
                 alt="ポートフォリオサイトの画像"
-                src="/portfolio-top.JPG"
+                src="/portfolio-top.jpg"
                 width={600}
                 height={360}
               />
