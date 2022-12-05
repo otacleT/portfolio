@@ -38,7 +38,7 @@ const Home: NextPage = (props) => {
       <SWRConfig value={{ fallback }}>
         <Github />
       </SWRConfig>
-      <Twitter />
+      {/* <Twitter /> */}
     </div>
   );
 };
