@@ -91,6 +91,25 @@ const Works: NextPage = () => {
             </p>
           </a>
         </Link>
+        <Link href="/works/scroll-game">
+          <a className="w-full sm:w-[calc(50%-5px)] block mt-6 sm:mt-5">
+            <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
+              <Image
+                className="object-cover"
+                alt="NFTを用いたスクロールゲームの画像"
+                src="/game-top.png"
+                width={600}
+                height={360}
+              />
+            </div>
+            <h4 className="dark:text-[#F5FFFA] text-[14px] sm:text-[15px] font-semibold text-center mt-3">
+              NFTを用いたスクロールゲーム
+            </h4>
+            <p className="dark:text-[#F5FFFA] text-xs sm:text-sm text-center mt-1">
+              モチベーション維持にNFTを活用したゲームです。
+            </p>
+          </a>
+        </Link>
       </div>
       <h3 className="section-subTitle mt-8">- Web page</h3>
       <div className="flex flex-wrap justify-between items-start space-y-6 sm:space-y-0 mt-3">
