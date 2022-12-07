@@ -1,14 +1,19 @@
 import { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { Seo } from "src/components/Seo";
 
 const Works: NextPage = () => {
   return (
     <div className="max-w-xl mx-auto px-4 pt-5">
-      <Head>
-        <title>Taisei Miyabe - Works</title>
-      </Head>
+      <Seo
+        pageTitle="Works"
+        pageDescription="宮部泰世のポートフォリオサイトです。"
+        pageImg={"https://www.otacle.com/works"}
+        pageImgWidth={1280}
+        pageImgHeight={960}
+        pagePath={"/works"}
+      />
       <h2 className="section-title">Works</h2>
       <h3 className="section-subTitle">- Decentralized app</h3>
       <div className="flex flex-wrap justify-between items-start">
