@@ -1,11 +1,10 @@
 import type { GetStaticProps, NextPage } from "next";
-import Head from "next/head";
 import { Bio } from "src/components/Bio";
 import { Github } from "src/components/Github";
 import { Hi } from "src/components/Hi";
 import { Profile } from "src/components/Profile";
+import { Seo } from "src/components/Seo";
 import { Skills } from "src/components/Skills";
-import { Twitter } from "src/components/Twitter";
 import { SWRConfig } from "swr";
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -28,9 +27,14 @@ const Home: NextPage = (props) => {
   const { fallback }: any = props;
   return (
     <div className="max-w-xl mx-auto px-4 pt-3 sm:pt-10">
-      <Head>
-        <title>Taisei Miyabe - Home</title>
-      </Head>
+      <Seo
+        pageTitle="Home"
+        pageDescription="宮部泰世のポートフォリオサイトです。"
+        pageImg={"https://www.otacle.com"}
+        pageImgWidth={1280}
+        pageImgHeight={960}
+        pagePath={"/"}
+      />
       <Hi />
       <Profile />
       <Bio />
