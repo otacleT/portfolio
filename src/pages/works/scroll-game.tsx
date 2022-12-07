@@ -1,14 +1,19 @@
 import { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { Seo } from "src/components/Seo";
 
 const Work: NextPage = () => {
   return (
     <div className="max-w-xl mx-auto px-4 pt-5">
-      <Head>
-        <title>Taisei Miyabe - NFTを用いたスクロールゲーム</title>
-      </Head>
+      <Seo
+        pageTitle="Web app - NFTを用いたスクロールゲーム"
+        pageDescription="宮部泰世のポートフォリオサイトです。"
+        pageImg={"https://www.otacle.com/works/scroll-game"}
+        pageImgWidth={1280}
+        pageImgHeight={960}
+        pagePath={"/works/scroll-game"}
+      />
       <Link href="/works">
         <a className="text-sm pr-1 dark:text-[#F5FFFA]">Works /</a>
       </Link>

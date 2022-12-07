@@ -1,14 +1,19 @@
 import { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { Seo } from "src/components/Seo";
 
 const Work: NextPage = () => {
   return (
     <div className="max-w-xl mx-auto px-4 pt-5">
-      <Head>
-        <title>Taisei Miyabe - 信頼度に応じた飲食店評価アプリ</title>
-      </Head>
+      <Seo
+        pageTitle="Dapp - 信頼度に応じた飲食店評価アプリ"
+        pageDescription="宮部泰世のポートフォリオサイトです。"
+        pageImg={"https://www.otacle.com/works/gourmet-app"}
+        pageImgWidth={1280}
+        pageImgHeight={960}
+        pagePath={"/works/gourmet-app"}
+      />
       <Link href="/works">
         <a className="text-sm pr-1 dark:text-[#F5FFFA]">Works /</a>
       </Link>
