@@ -46,7 +46,7 @@ const Works: NextPage = () => {
               />
             </div>
             <h4 className="dark:text-[#F5FFFA] text-[14px] sm:text-[15px] font-semibold text-center mt-3">
-              Colorful Todo App
+              Colorful Todoアプリ
             </h4>
             <p className="dark:text-[#F5FFFA] text-xs sm:text-sm text-center mt-1">
               UI/UXにこだわったTodoアプリです。
