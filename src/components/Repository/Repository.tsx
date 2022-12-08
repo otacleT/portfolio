@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import useSWRImmutable from "swr/immutable";
 
 type RepositoryProps = {
-  key: number;
+  key: string;
   name: string;
   url: string;
   description: string;
@@ -10,7 +10,7 @@ type RepositoryProps = {
 };
 
 export const Repository: FC<RepositoryProps> = (props) => {
-  const { key, name, url, description, languagesUrl } = props;
+  const { name, url, description, languagesUrl } = props;
   const { data, error } = useSWRImmutable(languagesUrl);
   const [total, setTotal] = useState(0);
   const [array, setArray] = useState<string[]>([]);
@@ -43,7 +43,6 @@ export const Repository: FC<RepositoryProps> = (props) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      key={key}
       className="block mt-5 first-of-type:mt-3 sm:mt-7"
     >
       <h3 className="dark:text-[#F5FFFA] text-[15px] sm:text-[17px] font-semibold">
