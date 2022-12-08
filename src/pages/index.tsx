@@ -29,7 +29,6 @@ const Home: NextPage = (props) => {
     <div className="max-w-xl mx-auto px-4 pt-3 sm:pt-10">
       <Seo
         pageTitle="Home"
-        pageDescription="宮部泰世のポートフォリオサイトです。"
         pageImg={"https://www.otacle.com"}
         pageImgWidth={1280}
         pageImgHeight={960}

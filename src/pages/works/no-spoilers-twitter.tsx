@@ -8,7 +8,6 @@ const Work: NextPage = () => {
     <div className="max-w-xl mx-auto px-4 pt-5">
       <Seo
         pageTitle="Web app - No Spoilers Twitter!!!"
-        pageDescription="宮部泰世のポートフォリオサイトです。"
         pageImg={"https://www.otacle.com/works/no-spoilers-twitter"}
         pageImgWidth={1280}
         pageImgHeight={960}
