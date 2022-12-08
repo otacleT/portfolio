@@ -2,7 +2,6 @@ import Head from "next/head";
 
 type SeoProps = {
   pageTitle: string;
-  pageDescription: string;
   pagePath: string;
   pageImg: string;
   pageImgWidth: number;
@@ -11,17 +10,15 @@ type SeoProps = {
 
 export const Seo = ({
   pageTitle,
-  pageDescription,
   pagePath,
   pageImg,
   pageImgWidth,
   pageImgHeight,
 }: SeoProps) => {
   const defaultTitle = "Taisei Miyabe";
-  const defaultDescription = "宮部泰世のポートフォリオサイトです。";
+  const description = "宮部泰世のポートフォリオサイトです。";
 
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
-  const description = pageDescription ? pageDescription : defaultDescription;
   const url = pagePath;
   const imgUrl = pageImg;
   const imgWidth = pageImgWidth ? pageImgWidth : 1280;
