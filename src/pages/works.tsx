@@ -118,7 +118,7 @@ const Works: NextPage = () => {
           </a>
         </Link>
         <Link href="/works/fukupoke">
-          <a className="w-full sm:w-[calc(50%-5px)] block">
+          <a className="w-full sm:w-[calc(50%-5px)] block mt-6 sm:mt-0">
             <div className="w-full aspect-video rounded-md overflow-hidden relative shadow-[0_0_0_2px_rgba(230,240,235,1)] dark:shadow-[0_0_0_2px_rgba(70,70,70,1)]">
               <Image
                 className="object-cover"
