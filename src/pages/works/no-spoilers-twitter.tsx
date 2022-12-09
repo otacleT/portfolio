@@ -20,10 +20,10 @@ const Work: NextPage = () => {
         No Spoilers Twitter!!!
       </h2>
       <p className="text-sm sm:text-[15px] leading-6 mt-5 dark:text-[#F5FFFA] block rounded-md bg-[#E6F0EB] dark:bg-[#464646] px-3 py-4">
-        Twitterのワードミュート機能の使いずらさを解消したアプリを開発しました。
-        このアプリでは、ミュートワードをグループ化することで「ツイートを一括でミュート可能」にし、携帯のアラームアプリのように「履歴からワンクリックでオン/オフ切り替え可能」にすることでTwitterのワードミュート機能の使いずらさを解消しています。
+        Twitterのワードミュート機能の使いずらさを解消したアプリです。
+        グループ化した複数のワードを一括でミュートでき、履歴からワンクリックでオン/オフ切り替えができます。
         <br />
-        Twitterのタイムライン取得のために必要なアクセストークンをCookieに保存することで、アクセストークン取得のためのリクエスト回数を抑える工夫を行いました。
+        このアプリでは、Twitterのタイムライン取得のために必要なアクセストークンをCookieに保存することで、アクセストークン取得のためのリクエスト回数を抑えるように実装を行いました。
       </p>
       <h3 className="text-xs sm:text-sm font-bold mt-5 dark:text-[#F5FFFA]">
         URL
