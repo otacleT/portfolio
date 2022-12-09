@@ -1,9 +1,11 @@
 import { NextPage } from "next";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { Seo } from "src/components/Seo";
 
 const Work: NextPage = () => {
+  const { theme } = useTheme();
   return (
     <div className="max-w-xl mx-auto px-4 pt-5">
       <Seo
@@ -39,7 +41,9 @@ const Work: NextPage = () => {
         <Image
           className="object-cover"
           alt="ポートフォリオサイトの画像"
-          src="/portfolio-top.jpg"
+          src={
+            theme === "dark" ? "/portfolio-top.jpg" : "/portfolio-top--dark.jpg"
+          }
           width={600}
           height={360}
         />
@@ -48,7 +52,11 @@ const Work: NextPage = () => {
         <Image
           className="object-cover"
           alt="ポートフォリオサイトの画像"
-          src="/portfolio-work.jpg"
+          src={
+            theme === "dark"
+              ? "/portfolio-work.jpg"
+              : "/portfolio-work--dark.jpg"
+          }
           width={600}
           height={360}
         />
@@ -57,7 +65,11 @@ const Work: NextPage = () => {
         <Image
           className="object-cover"
           alt="ポートフォリオサイトの画像"
-          src="/portfolio-single.jpg"
+          src={
+            theme === "dark"
+              ? "/portfolio-single.jpg"
+              : "/portfolio-single--dark.jpg"
+          }
           width={600}
           height={360}
         />
