@@ -1,9 +1,11 @@
 import { NextPage } from "next";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { Seo } from "src/components/Seo";
 
 const Works: NextPage = () => {
+  const { theme } = useTheme();
   return (
     <div className="max-w-xl mx-auto px-4 pt-5">
       <Seo
@@ -142,7 +144,11 @@ const Works: NextPage = () => {
               <Image
                 className="object-cover"
                 alt="ポートフォリオサイトの画像"
-                src="/portfolio-top.jpg"
+                src={
+                  theme === "dark"
+                    ? "/portfolio-top.jpg"
+                    : "/portfolio-top--dark.jpg"
+                }
                 width={600}
                 height={360}
               />
