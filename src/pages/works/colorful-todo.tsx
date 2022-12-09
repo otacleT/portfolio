@@ -20,7 +20,9 @@ const Work: NextPage = () => {
         Colorful Todoアプリ
       </h2>
       <p className="text-sm sm:text-[15px] leading-6 mt-5 dark:text-[#F5FFFA] block rounded-md bg-[#E6F0EB] dark:bg-[#464646] px-3 py-4">
-        直観的なUI/UXにこだわったColorfull Todoアプリ
+        タスクの期限を絵文字で表現したり、ドラッグアンドドロップを実装するなど、直観的なUI/UXを意識したTodoアプリです。
+        このアプリでは、CRUD(Create, Read, Update,
+        Delete)を満たすように実装を行いました。
       </p>
       <h3 className="text-xs sm:text-sm font-bold mt-5 dark:text-[#F5FFFA]">
         URL
