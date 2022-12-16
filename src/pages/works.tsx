@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
 import { NextPage } from "next";
 import { useTheme } from "next-themes";
 import Image from "next/image";

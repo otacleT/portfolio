@@ -1,3 +1,4 @@
+import React from "react";
 import { FC } from "react";
 import useSWRImmutable from "swr/immutable";
 import { Repository } from "../Repository";

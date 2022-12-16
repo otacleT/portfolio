@@ -1,3 +1,6 @@
+/* eslint-disable no-irregular-whitespace */
+import React from "react";
+
 export const Bio = () => {
   return (
     <section className="section-wrap mt-28">

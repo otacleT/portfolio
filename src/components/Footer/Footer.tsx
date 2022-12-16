@@ -1,3 +1,5 @@
+import React from "react";
+
 export const Footer = () => {
   return (
     <div className="max-w-xl mx-auto pt-10 pb-6">
