@@ -9,7 +9,7 @@ import { useState } from "react";
 
 export const Header = () => {
   const [opened, setOpened] = useState<boolean>(false);
-  const { theme, setTheme } = useTheme();
+  const { setTheme, theme } = useTheme();
   return (
     <div className="w-full h-16 py-3 fixed top-0 left-0 backdrop-blur-sm z-50">
       <div className="max-w-2xl mx-auto px-4 flex items-center justify-between">
