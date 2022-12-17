@@ -1,12 +1,13 @@
-import React from "react";
 import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import { Header } from "src/components/Header";
+
 import { MantineProvider } from "@mantine/core";
-import { Footer } from "src/components/Footer";
+import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
-import { SWRConfig } from "swr";
+import React from "react";
+import { Footer } from "src/components/Footer";
+import { Header } from "src/components/Header";
 import { fetcher } from "src/lib/fetcher";
+import { SWRConfig } from "swr";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
