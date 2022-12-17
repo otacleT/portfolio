@@ -30,7 +30,6 @@ jobs:
         run: yarn
 
       - name: Code Check
-        working-directory: ./client
         run: yarn lint
 
       - name: app-build
