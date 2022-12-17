@@ -18,12 +18,14 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["sort-keys-custom-order"],
+  plugins: ["sort-keys-custom-order", "simple-import-sort"],
   rules: {
     "no-console": ["error", { allow: ["warn", "info", "error"] }],
     "no-undef": "error",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
     "sort-keys-custom-order/object-keys": [
       "error",
       { orderedKeys: ["id", "name", "title"] },
