@@ -1,13 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Bars3CenterLeftIcon, SunIcon } from "@heroicons/react/24/outline";
 import { MoonIcon } from "@heroicons/react/24/solid";
 import { Menu } from "@mantine/core";
-import { useTheme } from "next-themes";
 import Link from "next/link";
+import { useTheme } from "next-themes";
+import React from "react";
 import { useState } from "react";
 
 export const Header = () => {
   const [opened, setOpened] = useState<boolean>(false);
-  const { theme, setTheme } = useTheme();
+  const { setTheme, theme } = useTheme();
   return (
     <div className="w-full h-16 py-3 fixed top-0 left-0 backdrop-blur-sm z-50">
       <div className="max-w-2xl mx-auto px-4 flex items-center justify-between">

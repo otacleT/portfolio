@@ -1,16 +1,17 @@
+import React from "react";
 import { FC, useEffect, useState } from "react";
 import useSWRImmutable from "swr/immutable";
 
 type RepositoryProps = {
-  key: string;
   name: string;
-  url: string;
   description: string;
+  key: string;
   languagesUrl: string;
+  url: string;
 };
 
 export const Repository: FC<RepositoryProps> = (props) => {
-  const { name, url, description, languagesUrl } = props;
+  const { name, description, languagesUrl, url } = props;
   const { data, error } = useSWRImmutable(languagesUrl);
   const [total, setTotal] = useState(0);
   const [array, setArray] = useState<string[]>([]);

@@ -1,4 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
+import React from "react";
 import { Bio } from "src/components/Bio";
 import { Github } from "src/components/Github";
 import { Hi } from "src/components/Hi";

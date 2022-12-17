@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import { Seo } from "src/components/Seo";
 
 const Work: NextPage = () => {

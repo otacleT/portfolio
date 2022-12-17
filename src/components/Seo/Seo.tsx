@@ -1,19 +1,20 @@
 import Head from "next/head";
+import React from "react";
 
 type SeoProps = {
-  pageTitle: string;
-  pagePath: string;
   pageImg: string;
-  pageImgWidth: number;
   pageImgHeight: number;
+  pageImgWidth: number;
+  pagePath: string;
+  pageTitle: string;
 };
 
 export const Seo = ({
-  pageTitle,
-  pagePath,
   pageImg,
-  pageImgWidth,
   pageImgHeight,
+  pageImgWidth,
+  pagePath,
+  pageTitle,
 }: SeoProps) => {
   const defaultTitle = "Taisei Miyabe";
   const description = "宮部泰世のポートフォリオサイトです。";
