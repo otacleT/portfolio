@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
+import { Social } from "../Social";
+
 export const Profile = () => {
   return (
     <div className="flex justify-center flex-wrap sm:justify-around sm:items-center">
@@ -14,38 +16,7 @@ export const Profile = () => {
         <p className="text-sm sm:text-base text-[#888888] dark:text-[#dadada] tracking-wide text-center sm:text-left sm:mt-1">
           Master&apos;s Student
         </p>
-        <ul className="w-32 sm:w-20 flex items-center justify-around sm:justify-between mx-auto sm:mx-0 mt-10 sm:mt-5">
-          <li>
-            <a
-              href="https://twitter.com/otacleT"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="dark:invert-[50%] dark:sepia-[0%] dark:saturate-[11%] dark:hue-rotate-[143deg] dark:brightness-[101%] dark:contrast-[93%]"
-                alt="twitterのロゴ"
-                src="/logo-twitter.png"
-                width={25}
-                height={25}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/otacleT"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="dark:invert-[50%] dark:sepia-[0%] dark:saturate-[11%] dark:hue-rotate-[143deg] dark:brightness-[101%] dark:contrast-[93%]"
-                alt="githubのロゴ"
-                src="/logo-github.png"
-                width={25}
-                height={25}
-              />
-            </a>
-          </li>
-        </ul>
+        <Social />
       </div>
     </div>
   );
