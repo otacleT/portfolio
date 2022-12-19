@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 
 import { MantineProvider } from "@mantine/core";
+import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
 import React from "react";
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Header />
           <Component {...pageProps} />
           <Footer />
+          <Analytics />
         </MantineProvider>
       </SWRConfig>
     </ThemeProvider>
