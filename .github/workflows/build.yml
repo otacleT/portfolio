@@ -30,7 +30,7 @@ jobs:
 
       - name: yarn
         if: ${{ steps.yarn-cache.outputs.cache-hit != 'true' }}
-        run: yarn
+        run: yarn install
 
       - name: Code Check
         run: yarn lint
