@@ -10,7 +10,7 @@
 
 @layer components {
   .section-wrap {
-    @apply mt-10;
+    @apply mt-12 sm:mt-14;
   }
   .section-title {
     @apply text-xl font-semibold sm:text-[22px] dark:text-[#F5FFFA];
