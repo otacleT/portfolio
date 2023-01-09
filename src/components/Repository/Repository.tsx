@@ -62,7 +62,7 @@ export const Repository: FC<RepositoryProps> = (props) => {
               key === "CSS" && "bg-[#563d7c]"
             } ${key === "JavaScript" && "bg-[#f1e05a]"} ${
               key === "HTML" && "bg-[#e34c26]"
-            }`}
+            } ${key === "Vue" && "bg-[#41b883]"}`}
             style={{
               width: `${Math.round((data[key] / total) * 1000) / 10 + "%"}`,
             }}
@@ -82,7 +82,7 @@ export const Repository: FC<RepositoryProps> = (props) => {
                 key === "CSS" && "bg-[#563d7c]"
               } ${key === "JavaScript" && "bg-[#f1e05a]"} ${
                 key === "HTML" && "bg-[#e34c26]"
-              }`}
+              } ${key === "Vue" && "bg-[#41b883]"}`}
             ></span>
             {key}
             <span className="pl-1">
