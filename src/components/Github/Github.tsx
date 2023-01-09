@@ -26,7 +26,7 @@ export const Github: FC = () => {
           key={data.id}
           name={data.name}
           url={data.html_url}
-          description={data.description ?? "No descroption"}
+          description={data.description ?? "No description"}
           languagesUrl={data.languages_url}
         />
       ))}
