@@ -1,11 +1,11 @@
 import React from "react";
 import { FC } from "react";
-import useSWRImmutable from "swr/immutable";
+import useSWR from "swr/immutable";
 
 import { Repository } from "../Repository";
 
 export const Github: FC = () => {
-  const { data, error } = useSWRImmutable(
+  const { data, error } = useSWR(
     "https://api.github.com/users/otacleT/repos?sort=updated&direction=desc&per_page=3"
   );
   if (!error && !data) {

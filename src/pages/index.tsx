@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
 import React from "react";
 import { Bio } from "src/components/Bio";
 import { Github } from "src/components/Github";
@@ -8,7 +8,7 @@ import { Seo } from "src/components/Seo";
 import { Skills } from "src/components/Skills";
 import { SWRConfig } from "swr";
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const GITHUB_URL =
     "https://api.github.com/users/otacleT/repos?sort=updated&direction=desc&per_page=3";
   const repository = await fetch(GITHUB_URL);
